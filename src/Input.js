@@ -50,7 +50,7 @@ function Input({ names, setNames }) {
           <input
             type="input"
             className="form__field"
-            placeholder="Name"
+            placeholder="Enter"
             value={search}
             onChange={addvalue}
             required
