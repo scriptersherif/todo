@@ -1,0 +1,151 @@
+.heading-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 2rem auto 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  color: #646681;
+}
+h2 {
+  color: #646681;
+  margin-top: 5px;
+}
+.task-btn {
+  background-color: #646ff0;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.status {
+  padding: 10px;
+  background-color: #cccdde;
+  color: #585858;
+  border-radius: 25px;
+}
+.enter-btn {
+  background-color: #cccdde;
+  color: #585858;
+  margin-left: 3px;
+  border: solid 2px grey;
+}
+.todo-para {
+  display: inline-block;
+}
+.todo-checked {
+  text-decoration: line-through;
+}
+.todo-unchecked {
+  text-decoration: none;
+}
+.beer-icon {
+  color: red;
+}
+.delete-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 94%;
+  display: flex;
+  align-items: center;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color: #222222;
+}
+p {
+  color: rgb(183, 105, 183);
+  width: 150px;
+  margin-top: 14px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.addtask-icon {
+  color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+/* input-icons-style */
+.checkbox-input {
+  width: 35px;
+}
+.delete-icon {
+  color: rgb(183, 105, 183);
+  font-size: 35px;
+  transition: 0.3s ease;
+  margin-top: 5px;
+}
+.hover-button :hover .delete-icon {
+  color: red;
+  margin-top: 3px;
+}
+
