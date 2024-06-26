@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import { MdOutlineAddCircle } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
-
 function Input({ names, setNames }) {
   const [newName, setNewName] = useState("");
   const [search, setSearch] = useState("");
-
   function inputHandle(event) {
     setNewName(event.target.value);
   }
@@ -14,11 +12,9 @@ function Input({ names, setNames }) {
     setNames((prevNames) => [...prevNames, { name: newName, checked: false }]);
     setNewName("");
   }
-
   function remove(index) {
     setNames((prevNames) => prevNames.filter((_, i) => i !== index));
   }
-
   function toggleCheck(index) {
     setNames((prevNames) =>
       prevNames.map((item, i) => {
