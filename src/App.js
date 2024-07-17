@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="text-center heading-title">Todo List</h1>
+      <h1 className="text-center heading-title">Todo list</h1>
       <div className="button-container text-center">
         {buttonVisible && ( // Render button only if it's visible
           <button className="task-btn btn-lg m-5" onClick={handleButtonClick}>
